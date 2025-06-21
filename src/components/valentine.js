@@ -10,7 +10,6 @@ function Valentine() {
 
   return (
     <div>
-        
         <div className="container">
             <div 
                 className={`envelope-wrapper ${isFlapOpen ? 'flap' : ''}`} 
@@ -21,7 +20,7 @@ function Valentine() {
                         <div className="text">
                             <strong>Dear Chane Kyler L. Ferraren,</strong>
                             <p>
-                            I don’t just want to hear you, I want to understand you fully 
+                            I don't just want to hear you, I want to understand you fully 
                             and be by your side through everything, always. 
 
                             <br />
@@ -41,6 +40,19 @@ function Valentine() {
                 <div className="heart"></div>
             </div>
         </div>
+        {isFlapOpen && (
+            <div className="hearts-container">
+                <div className="heart-animation"></div>
+                <div className="heart-animation"></div>
+                <div className="heart-animation"></div>
+                <div className="heart-animation"></div>
+                <div className="heart-animation"></div>
+                <div className="heart-animation"></div>
+                <div className="heart-animation"></div>
+                <div className="heart-animation"></div>
+                <div className="heart-animation"></div>
+            </div>
+        )}
     </div>
   );
 }
